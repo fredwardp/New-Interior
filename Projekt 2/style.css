@@ -50,8 +50,7 @@ a {
 
 p,
 a {
-  font-family: "Helvetica Neue Regular";
-  letter-spacing: 1.3px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -131,6 +130,7 @@ header {
   min-height: 100vh;
   background: url(assets/img/hero.jpg) no-repeat center;
   background-size: cover;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 nav {
@@ -164,6 +164,7 @@ h1 {
   font-family: "Nixie One";
   color: white;
   font-weight: 100;
+  text-align: center;
 }
 
 .hero p {
@@ -190,8 +191,7 @@ h1 {
 }
 
 .images_wrapper img {
-  max-width: 32%;
-  width: auto;
+  width: 100%;
   height: auto;
 }
 
@@ -245,7 +245,32 @@ h1 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 18px;
+  margin: 0 0 18px 0;
+}
+
+div .img_mobile_wrapper {
+  background: unset;
+  margin: 0;
+  position: relative;
+}
+
+.abs_background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: rgba(2, 56, 58, 0.7);
+  display: none;
+}
+
+.abs {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 
 .blog_img1 {
@@ -277,7 +302,7 @@ article .italic {
   margin-bottom: 22px;
 }
 
-.images_wrapper a {
+.images_wrapper article a {
   color: #4da7ca;
   font-size: 1.4rem;
 }
@@ -423,28 +448,7 @@ footer {
   width: 100%;
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 750px) {
-  .services_wrapper {
-    margin: 0 2%;
-    gap: 3%;
-  }
-  .services_wrapper p {
-    padding: 0 10px 15px 10px;
-  }
-  .mobile_wrapper {
-    display: flex;
-    gap: 2%;
-  }
-  .images_wrapper {
-    flex-direction: column;
-    margin-bottom: 0;
-    gap: 0;
-  }
-  .images_wrapper img {
-    max-width: unset;
-    margin-bottom: 2%;
-  }
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -456,7 +460,7 @@ footer {
 }
 
 /* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (max-device-width: 1024px) and (orientation: portrait) {
   header {
     min-height: unset;
   }
@@ -466,9 +470,6 @@ footer {
   .container {
     padding: 0 24px;
   }
-  .services .container {
-    padding: 0 9px;
-  }
   .services_wrapper {
     flex-direction: column;
     margin: 0 25px;
@@ -476,18 +477,129 @@ footer {
   .services_wrapper article {
     max-width: unset;
   }
+  .dark_container {
+    padding: 20px 0;
+  }
+  .free .container,
+  .services .container,
+  .contact .container {
+    padding: 0 9px;
+  }
+  .services_wrapper {
+    margin: 0;
+  }
+  form {
+    max-width: unset;
+    margin: 0 15px;
+  }
+  footer .container {
+    margin-top: 26px;
+  }
 }
 
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   header {
     min-height: unset;
-    max-height: 1300px;
+    max-height: 1200px;
   }
   .hero {
-    height: 1220px;
+    height: 1120px;
   }
   .container {
     padding: 0 135px;
   }
+  h1{
+    font-size: 10rem;
+  }
+  header .hero p{
+    font-size: 3.2rem;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 750px) {
+  .services_wrapper {
+    margin: 0 2%;
+    gap: 3%;
+  }
+  .services_wrapper p {
+    padding: 0 10px 15px 10px;
+  }
+  .mobile_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .images_wrapper {
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 0;
+  }
+  .images_wrapper img {
+    max-width: unset;
+    width: 100%;
+    height: 100%;
+  }
+  div .img_mobile_wrapper {
+    margin-bottom: 30px;
+    height: 206px;
+  }
+  .abs_background {
+    display: flex;
+    justify-content: center;
+  }
+  .abs {
+    display: flex;
+  }
+  h1 {
+    font-size: 3.9rem;
+    margin-bottom: 14px;
+  }
+  .hero p {
+    font-size: 17px;
+  }
+  header {
+    box-shadow: none;
+  }
+  .container {
+    padding: 0;
+  }
+  .services{
+    background-image: url(assets/img/services_mobile.png);
+  }
+  .blog{
+    padding: 60px 15px
+  }
+  .images_wrapper article{
+    margin-bottom:40px
+  }
+  .free{
+    background-image: url(assets/img/parallax_mobile.png);
+  }
+  .free .container{
+    padding: 0;
+  }
+  .testimonial_article{
+    margin-bottom:27px 
+  }
+  .contact .container{
+    padding: 0 ;
+  }
+  .dark_container{
+    padding: 20px 0 40px 0;
+  }
+  .contact{
+   background-image: url(assets/img/footer_mobile.png);;
+  }
+  .contact .container{
+    margin-bottom: 20px
+  }
+  footer {
+    padding-left: 15px ;
+    height: 160px;
+  }
+  footer p{
+    max-width: 120px
+  }
+  
 }
