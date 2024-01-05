@@ -1,0 +1,493 @@
+@font-face {
+  font-family: "Helvetica Neue Regular";
+  src: url(assets/fonts/Helvetica_neue/Helvetica_Neue/Helvetica_Neue_Regular/Helvetica_Neue_Regular.otf);
+}
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url(assets/fonts/Helvetica_neue/Helvetica_Neue/Helvetica_Neue_Condensed_Bold/Helvetica_Neue_Condensed_Bold.ttf);
+}
+
+@font-face {
+  font-family: "Helvetica Neue Italic";
+  src: url(assets/fonts/Helvetica_neue_italic/HelveticaNeue_Italic/HelveticaNeue\ Italic.ttf);
+}
+
+@font-face {
+  font-family: "Alegreya Sans Medium";
+  src: url(assets/fonts/Alegreya_sans/AlegreyaSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Alegreya Sans Regular";
+  src: url(assets/fonts/Alegreya_sans/AlegreyaSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Alegreya SC Medium";
+  src: url(assets/fonts/Alegreya_SC/AlegreyaSC-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Nixie One";
+  src: url(assets/fonts/Nixie_One/NixieOne-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+a {
+  font-family: "Helvetica Neue Regular";
+  letter-spacing: 1.3px;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-family: "Alegreya Sans Medium";
+
+  font-weight: 500;
+}
+
+h3 {
+  font-family: "Alegreya Sans Medium";
+  font-weight: 500;
+}
+
+.btn {
+  padding: 11px 17px 13px 17px;
+  border: 1px solid #3a4f52;
+  color: #3a4f52;
+  font-size: 1.8rem;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1380px;
+  padding: 0 5vw;
+  margin: auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space_btwn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bright p {
+  color: #6a6a6a;
+}
+
+.bright h2,
+.bright h3 {
+  color: #3a4f52;
+}
+
+.dark {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dark_container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 15px;
+  max-width: 1200px;
+}
+
+.dark p,
+.dark h2,
+.dark h3 {
+  color: white;
+}
+
+header {
+  min-height: 100vh;
+  background: url(assets/img/hero.jpg) no-repeat center;
+  background-size: cover;
+}
+
+nav {
+  max-width: 1500px;
+  padding: 25px 30px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 3.6rem;
+  color: white;
+  font-family: "Alegreya SC Medium";
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.logo:first-letter {
+  font-size: 5rem;
+}
+
+.hero {
+  height: 90vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 5.6rem;
+  font-family: "Nixie One";
+  color: white;
+  font-weight: 100;
+}
+
+.hero p {
+  font-family: "Alegreya SC Medium";
+  font-size: 2.24rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.works {
+  padding: 60px 0 90px 0;
+}
+
+.images_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+}
+
+.images_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2.3%;
+  margin-bottom: 2.3%;
+}
+
+.images_wrapper img {
+  max-width: 32%;
+  width: auto;
+  height: auto;
+}
+
+.works .space_btwn {
+  margin-bottom: 16px;
+}
+
+.images_container p {
+  margin-bottom: 62px;
+}
+
+.services {
+  background-image: url(assets/img/services.png);
+  padding: 80px 0;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.services p {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services_wrapper {
+  display: flex;
+  gap: 30px;
+  margin: 0 5%;
+}
+
+.services_wrapper article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 33%;
+}
+
+.services_wrapper p {
+  padding: 0px 25px 20px 25px;
+  margin-bottom: 0;
+}
+
+.services h3 {
+  font-size: 3rem;
+  margin-bottom: 14px;
+}
+
+.images_wrapper div {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 18px;
+}
+
+.blog_img1 {
+  background-image: url(assets/img/blog1.png);
+  height: 231px;
+}
+
+.blog_img2 {
+  background-image: url(assets/img/blog2.png);
+  height: 270px;
+}
+
+.blog_img3 {
+  background-image: url(assets/img/blog3.png);
+  height: 360px;
+}
+
+.images_wrapper h3 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+article .italic {
+  font-family: "Helvetica Neue Italic";
+  margin-bottom: 17px;
+}
+
+.blog article p {
+  margin-bottom: 22px;
+}
+
+.images_wrapper a {
+  color: #4da7ca;
+  font-size: 1.4rem;
+}
+
+.blog {
+  padding: 60px 0;
+}
+
+.free {
+  background: url(assets/img/parallax.png) center no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  padding: 80px 0;
+}
+
+.free_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.free_container p {
+  font-family: "Alegreya Sans Regular";
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 39.6px;
+  text-align: center;
+  margin-bottom: 59px;
+}
+
+.btn_white {
+  color: white;
+  border: white 1px solid;
+  font-size: 1.8rem;
+}
+
+.testimonial {
+  padding: 60px 0;
+}
+
+.center_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services_wrapper {
+  display: flex;
+  gap: 30px;
+  max-width: 1080px;
+  margin: 0 5%;
+}
+
+.testimonial h2,
+.testimonial p {
+  text-align: center;
+}
+
+.testimonial h2 {
+  margin-bottom: 16px;
+}
+
+.testimonial_sub {
+  margin-bottom: 62px;
+}
+
+.testimonial_article img {
+  margin-bottom: 15px;
+}
+
+.testimonial_article .testimonial_name {
+  font-family: "Helvetica Neue Bold";
+  padding: 0;
+}
+
+.contact {
+  background: url(assets/img/footer.png) center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 529px;
+  margin: 0 auto;
+}
+
+form h2 {
+  margin-bottom: 16px;
+}
+
+form p {
+  margin-bottom: 62px;
+}
+
+input,
+textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  margin-bottom: 15px;
+  padding: 9px 13px;
+  border-radius: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.btn_form {
+  max-width: 90px;
+  font-size: 1.4rem;
+  padding: 7px 13px;
+  line-height: 20px;
+  border-radius: unset;
+}
+
+.btn_form:hover {
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  background-color: #2b3e51;
+  height: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.footer_container {
+  width: 100%;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 750px) {
+  .services_wrapper {
+    margin: 0 2%;
+    gap: 3%;
+  }
+  .services_wrapper p {
+    padding: 0 10px 15px 10px;
+  }
+  .mobile_wrapper {
+    display: flex;
+    gap: 2%;
+  }
+  .images_wrapper {
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 0;
+  }
+  .images_wrapper img {
+    max-width: unset;
+    margin-bottom: 2%;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) and (orientation: landscape) {
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  header {
+    min-height: unset;
+  }
+  .hero {
+    height: 400px;
+  }
+  .container {
+    padding: 0 24px;
+  }
+  .services .container {
+    padding: 0 9px;
+  }
+  .services_wrapper {
+    flex-direction: column;
+    margin: 0 25px;
+  }
+  .services_wrapper article {
+    max-width: unset;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  header {
+    min-height: unset;
+    max-height: 1300px;
+  }
+  .hero {
+    height: 1220px;
+  }
+  .container {
+    padding: 0 135px;
+  }
+}
