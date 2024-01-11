@@ -448,9 +448,6 @@ footer {
   width: 100%;
 }
 
-
-}
-
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) and (orientation: landscape) {
 }
@@ -509,10 +506,10 @@ footer {
   .container {
     padding: 0 135px;
   }
-  h1{
+  h1 {
     font-size: 10rem;
   }
-  header .hero p{
+  header .hero p {
     font-size: 3.2rem;
   }
 }
@@ -564,42 +561,41 @@ footer {
   .container {
     padding: 0;
   }
-  .services{
+  .services {
     background-image: url(assets/img/services_mobile.png);
   }
-  .blog{
-    padding: 60px 15px
+  .blog {
+    padding: 60px 15px;
   }
-  .images_wrapper article{
-    margin-bottom:40px
+  .images_wrapper article {
+    margin-bottom: 40px;
   }
-  .free{
+  .free {
     background-image: url(assets/img/parallax_mobile.png);
   }
-  .free .container{
+  .free .container {
     padding: 0;
   }
-  .testimonial_article{
-    margin-bottom:27px 
+  .testimonial_article {
+    margin-bottom: 27px;
   }
-  .contact .container{
-    padding: 0 ;
+  .contact .container {
+    padding: 0;
   }
-  .dark_container{
+  .dark_container {
     padding: 20px 0 40px 0;
   }
-  .contact{
-   background-image: url(assets/img/footer_mobile.png);;
+  .contact {
+    background-image: url(assets/img/footer_mobile.png);
   }
-  .contact .container{
-    margin-bottom: 20px
+  .contact .container {
+    margin-bottom: 20px;
   }
   footer {
-    padding-left: 15px ;
+    padding-left: 15px;
     height: 160px;
   }
-  footer p{
-    max-width: 120px
+  footer p {
+    max-width: 120px;
   }
-  
 }
